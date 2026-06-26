@@ -4,7 +4,7 @@ import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi';
 
 const TiltCard = ({ children, className }) => {
   const ref = useRef(null);
-  
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -40,7 +40,7 @@ const TiltCard = ({ children, className }) => {
       style={{ rotateY, rotateX, transformStyle: "preserve-3d" }}
       className={`relative rounded-2xl bg-bg-card border border-bg-card-hover group ${className}`}
     >
-      <div 
+      <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0 pointer-events-none"
         style={{
           background: "radial-gradient(circle at center, rgba(0,245,255,0.05) 0%, transparent 60%)"
@@ -59,15 +59,41 @@ export default function ProjectsCenter() {
     description: "A full-scale e-commerce solution featuring secure authentication, product management, and seamless checkout flow.",
     features: ["Authentication", "JWT Security", "Shopping Cart", "Admin Panel"],
     tech: ["React", "Spring Boot", "MongoDB", "REST APIs", "Tailwind CSS"],
-    github: "#",
+    github: "https://github.com/Shibin-X/E-commerce-ShopHub",
     live: "#"
   };
 
   const otherProjects = [
     {
+      title: "Expense Tracker Dashboard",
+      description:
+        "A responsive expense management dashboard that helps users track income, expenses, and financial summaries through interactive charts and a modern user interface.",
+      tech: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Chart.js"
+      ],
+      github: "https://github.com/Shibin-X/finance-dashboard",
+      live: "xpensofin.netlify.app"
+    },
+    {
+      title: "Manatomy Clothing Store",
+      description:
+        "A modern fashion e-commerce website featuring responsive design, product catalog, category browsing, and an optimized shopping experience.",
+      tech: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Responsive Design"
+      ],
+      github: "https://github.com/Shibin-X/Clothing-Project",
+      live: "manatomy.netlify.app"
+    },
+    {
       title: "Task Management API",
       description: "RESTful backend service for managing tasks, teams, and project boards with real-time updates.",
-      tech: ["Node.js", "Express", "Socket.io"],
+      tech: ["Node.js", "Socket.io"],
       github: "#",
       live: "#"
     },
@@ -108,7 +134,7 @@ export default function ProjectsCenter() {
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold text-text-main">{featuredProject.title}</h3>
                 <p className="text-text-muted text-lg leading-relaxed">{featuredProject.description}</p>
-                
+
                 <div>
                   <h4 className="text-sm font-mono text-text-muted mb-3 uppercase tracking-wider">Key Features</h4>
                   <ul className="grid grid-cols-2 gap-2">
@@ -141,7 +167,7 @@ export default function ProjectsCenter() {
                   </a>
                 </div>
               </div>
-              
+
               <div className="relative w-full aspect-[4/3] bg-bg-base rounded-xl border border-bg-card-hover overflow-hidden group/img shadow-xl">
                 <div className="absolute inset-0 flex flex-col">
                   {/* Fake Browser Chrome */}
@@ -150,17 +176,17 @@ export default function ProjectsCenter() {
                     <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
                     <div className="ml-4 px-4 py-0.5 bg-bg-base border border-bg-card-hover rounded text-[10px] font-mono text-text-muted w-1/2 overflow-hidden whitespace-nowrap">
-                      https://ecommerce-platform.demo
+                      https://ecommerce-platform.live
                     </div>
                   </div>
                   {/* Fake UI Content */}
                   <div className="flex-1 p-6 relative overflow-hidden bg-gradient-to-br from-bg-base to-bg-card">
-                     <div className="w-full h-32 bg-bg-card-hover/50 rounded-lg mb-4 animate-pulse" />
-                     <div className="grid grid-cols-3 gap-4">
-                       <div className="h-24 bg-bg-card-hover/50 rounded-lg animate-pulse" />
-                       <div className="h-24 bg-bg-card-hover/50 rounded-lg animate-pulse" style={{animationDelay: '0.2s'}} />
-                       <div className="h-24 bg-bg-card-hover/50 rounded-lg animate-pulse" style={{animationDelay: '0.4s'}} />
-                     </div>
+                    <div className="w-full h-32 bg-bg-card-hover/50 rounded-lg mb-4 animate-pulse" />
+                    <div className="grid grid-cols-3 gap-4">
+                      <div className="h-24 bg-bg-card-hover/50 rounded-lg animate-pulse" />
+                      <div className="h-24 bg-bg-card-hover/50 rounded-lg animate-pulse" style={{ animationDelay: '0.2s' }} />
+                      <div className="h-24 bg-bg-card-hover/50 rounded-lg animate-pulse" style={{ animationDelay: '0.4s' }} />
+                    </div>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-accent-cyan/10 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 pointer-events-none" />

@@ -1,3 +1,4 @@
+import { BsReddit } from 'react-icons/bs';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { FiLink } from 'react-icons/fi';
 
@@ -5,8 +6,8 @@ export default function SocialDock() {
   const links = [
     { icon: FaLinkedin, url: 'https://www.linkedin.com/in/shibin-g', label: 'LinkedIn' },
     { icon: FaGithub, url: 'https://github.com/Shibin-X', label: 'GitHub' },
-    { icon: FaEnvelope, url: '', label: 'Email' },
-    { icon: FiLink, url: '#', label: 'Topmate' },
+    { icon: FaEnvelope, url: 'mailto:shibin2k3@gmail.com', label: 'Email' },
+    { icon: BsReddit, url: 'https://www.reddit.com/user/CircuitToCode', label: 'Reddit' },
   ];
 
   return (

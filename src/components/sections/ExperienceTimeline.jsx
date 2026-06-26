@@ -2,28 +2,47 @@ import { motion } from 'framer-motion';
 
 export default function ExperienceTimeline() {
   const experiences = [
-    {
-      year: "2026",
-      title: "Seeking Software Opportunities",
-      description: "Actively looking for full-time roles as a Full Stack Developer or Backend Engineer to build scalable and impactful applications.",
-      icon: "🚀",
-      active: true
-    },
-    {
-      year: "2025",
-      title: "Freelance Web Development",
-      description: "Built and deployed custom web applications for clients, focusing on responsive design and performance optimization using React and Tailwind CSS.",
-      icon: "💻",
-      active: false
-    },
-    {
-      year: "2025",
-      title: "Java Full Stack Training",
-      description: "Completed intensive training covering Java, Spring Boot, microservices architecture, and React frontend development.",
-      icon: "🎓",
-      active: false
-    }
-  ];
+  {
+    year: "2026",
+    title: "Open to Software Engineering Opportunities",
+    description:
+      "Actively seeking entry-level Java Backend Developer, Java Full Stack Developer, Technical Support Engineer, and Software Support roles. Continuously improving Java, Spring Boot, React, SQL, Linux, and problem-solving skills while building production-ready applications.",
+    icon: "🚀",
+    active: true
+  },
+  {
+    year: "2026",
+    title: "Full Stack Project Development",
+    description:
+      "Designed, developed, and deployed full-stack web applications including an E-Commerce Platform, Expense Tracker Dashboard, Manatomy Clothing Store, and a personal developer portfolio. Gained practical experience with REST APIs, authentication, responsive UI development, and cloud deployment.",
+    icon: "💼",
+    active: false
+  },
+  {
+    year: "2025",
+    title: "Freelance Web Developer",
+    description:
+      "Developed responsive websites and customized WordPress solutions for clients. Focused on modern UI design, performance optimization, deployment, and delivering user-friendly web experiences.",
+    icon: "💻",
+    active: false
+  },
+  {
+    year: "2025",
+    title: "Java Full Stack Development Training",
+    description:
+      "Completed hands-on training in Core Java, Spring Boot, React, JavaScript, SQL, MongoDB, Git, REST APIs, and modern software development practices through practical projects.",
+    icon: "🎓",
+    active: false
+  },
+  {
+    year: "2021 – 2025",
+    title: "Bachelor of Engineering – Electronics & Communication",
+    description:
+      "Graduated with a Bachelor's degree in Electronics and Communication Engineering. Built a strong foundation in analytical thinking, problem-solving, networking concepts, and software development fundamentals.",
+    icon: "🎖️",
+    active: false
+  }
+];
 
   return (
     <section id="experience" className="min-h-screen py-20 px-6 lg:px-16 flex flex-col justify-center border-t border-bg-card-hover/50 relative">
@@ -39,7 +58,7 @@ export default function ExperienceTimeline() {
             Experience <span className="text-gradient ml-3">Timeline</span>
           </h2>
           <p className="text-text-muted font-mono bg-bg-card border border-bg-card-hover inline-block px-4 py-1 rounded-md">
-            &gt; Parsing historical records...
+            &gt; Building experience through continuous learning and real-world projects.
           </p>
         </motion.div>
 

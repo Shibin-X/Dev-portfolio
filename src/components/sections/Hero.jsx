@@ -86,7 +86,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-2xl md:text-3xl text-text-muted font-medium"
           >
-            Java Developer
+            Java Developer | SpringBoot | React
           </motion.h2>
 
           <motion.p
@@ -95,7 +95,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg text-text-muted max-w-lg leading-relaxed"
           >
-            Architecting robust backend systems and crafting immersive digital experiences. Transforming complex problems into elegant, scalable solutions.
+            Java Developer with a strong interest in backend engineering, Linux, networking. I build practical web applications while continuously expanding my technical expertise.
           </motion.p>
 
           <motion.div
@@ -158,7 +158,7 @@ export default function Hero() {
       >
         {[
           { label: "Class of", value: "2025" },
-          { label: "Role", value: "Java Full Stack" },
+          { label: "Role", value: "Java FullStack Developer" },
           { label: "Stack", value: "React + SpringBoot" },
           { label: "Status", value: "Open To Work", highlight: true }
         ].map((stat, i) => (

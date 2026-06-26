@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaReact, FaHtml5, FaCss3Alt, FaJava, FaNodeJs, FaNetworkWired, FaHeadset } from 'react-icons/fa';
-import { SiJavascript, SiSpringboot, SiMongodb, SiMysql, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { SiJavascript, SiSpringboot, SiMongodb, SiMysql, SiTailwindcss, SiPostman, SiVite, SiGit, SiLinux } from 'react-icons/si';
 import { VscDebugConsole } from 'react-icons/vsc';
+import { BsFileExcel } from 'react-icons/bs';
 
 export default function SkillsArsenal() {
   const categories = [
@@ -15,6 +16,7 @@ export default function SkillsArsenal() {
         { name: "HTML5", icon: FaHtml5 },
         { name: "CSS3", icon: FaCss3Alt },
         { name: "Tailwind", icon: SiTailwindcss },
+        { name: "Vite", icon: SiVite}
       ]
     },
     {
@@ -25,8 +27,8 @@ export default function SkillsArsenal() {
         { name: "Java", icon: FaJava },
         { name: "Spring Boot", icon: SiSpringboot },
         { name: "Node.js", icon: FaNodeJs },
-        { name: "Express", icon: SiExpress },
         { name: "REST API", icon: VscDebugConsole },
+        { name: "PostMan", icon: SiPostman },
       ]
     },
     {
@@ -36,6 +38,7 @@ export default function SkillsArsenal() {
       skills: [
         { name: "MongoDB", icon: SiMongodb },
         { name: "MySQL", icon: SiMysql },
+        { name: "Excel", icon: BsFileExcel},
       ]
     },
     {
@@ -46,6 +49,8 @@ export default function SkillsArsenal() {
         { name: "Troubleshoot", icon: VscDebugConsole },
         { name: "Networking", icon: FaNetworkWired },
         { name: "Support", icon: FaHeadset },
+        { name: "Git", icon: SiGit},
+        { name: "Linux", icon: SiLinux}
       ]
     }
   ];

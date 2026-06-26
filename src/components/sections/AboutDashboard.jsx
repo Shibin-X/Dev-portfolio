@@ -12,7 +12,7 @@ export default function AboutDashboard() {
           <p className="text-text-muted leading-relaxed">
             <strong className="text-text-main font-mono mr-2">NAME:</strong> Shibin G<br/>
             <strong className="text-text-main font-mono mr-2">ROLE:</strong> Full Stack Engineer<br/>
-            <strong className="text-text-main font-mono mr-2">LOC:</strong> India<br/>
+            <strong className="text-text-main font-mono mr-2">LOC:</strong> Coimbatore, India<br/>
             <strong className="text-text-main font-mono mr-2">MAIL:</strong> shibin2k3@gmail.com
           </p>
           <div className="pt-4 border-t border-bg-card-hover">
@@ -30,7 +30,7 @@ export default function AboutDashboard() {
       delay: 0.2,
       content: (
         <div className="flex flex-wrap gap-2">
-          {['Java', 'Spring Boot', 'React', 'JavaScript', 'MongoDB', 'Tailwind CSS', 'HTML', 'CSS', 'MySQL', 'REST APIs', 'Git', 'GitHub', 'Linux', 'WordPress'].map(skill => (
+          {['Java', 'Spring Boot', 'React', 'JavaScript', 'MongoDB', 'Tailwind CSS', 'HTML', 'CSS', 'MySQL', 'REST APIs', 'Git', 'GitHub', 'Linux', 'WordPress', 'Figma'].map(skill => (
             <span key={skill} className="px-3 py-1.5 bg-bg-base border border-bg-card-hover rounded-md text-sm text-text-muted font-mono hover:border-accent-purple hover:text-accent-purple hover:shadow-[0_0_10px_rgba(124,58,237,0.3)] transition-all cursor-default">
               {skill}
             </span>
@@ -44,7 +44,7 @@ export default function AboutDashboard() {
       delay: 0.3,
       content: (
         <p className="text-text-muted leading-relaxed">
-          I am an Electronics and Communication Engineering graduate focused on Java backend development and modern web technologies. I enjoy building full-stack applications with Spring Boot, React, and MongoDB while continuously improving my software engineering skills. I am currently seeking entry-level opportunities where I can contribute, learn from experienced engineers, and build reliable software solutions.
+          I am an Electronics and Communication Engineering graduate focused on Java backend development and modern web technologies. I enjoy building full-stack applications with Spring Boot, React, and MongoDB while continuously improving my software engineering skills. I am currently seeking opportunities where I can contribute, learn from experienced engineers, and build reliable software solutions.
         </p>
       )
     },
