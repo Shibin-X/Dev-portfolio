@@ -49,7 +49,7 @@ export default function ContactTerminal() {
             <div className="w-3 h-3 rounded-full bg-red-500" />
             <div className="w-3 h-3 rounded-full bg-yellow-500" />
             <div className="w-3 h-3 rounded-full bg-green-500" />
-            <span className="ml-4 text-xs font-mono text-text-muted">guest@portfolio: ~/contact</span>
+            <span className="ml-4 text-xs font-mono text-text-muted">shibin@portfolio: ~/contact</span>
           </div>
 
           {/* Terminal Body */}
@@ -62,7 +62,7 @@ export default function ContactTerminal() {
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div className="flex flex-col sm:flex-row gap-2 sm:items-center group">
                 <label className="text-accent-cyan whitespace-nowrap">
-                  <span className="text-accent-pink">guest</span>@portfolio:~$ <span className="text-text-main group-hover:text-accent-cyan transition-colors">Enter Name</span>
+                  <span className="text-accent-pink">shibin</span>@portfolio:~$ <span className="text-text-main group-hover:text-accent-cyan transition-colors">Enter Name</span>
                 </label>
                 <input
                   type="text"
@@ -77,7 +77,7 @@ export default function ContactTerminal() {
 
               <div className="flex flex-col sm:flex-row gap-2 sm:items-center group">
                 <label className="text-accent-cyan whitespace-nowrap">
-                  <span className="text-accent-pink">guest</span>@portfolio:~$ <span className="text-text-main group-hover:text-accent-cyan transition-colors">Enter Email</span>
+                  <span className="text-accent-pink">shibin</span>@portfolio:~$ <span className="text-text-main group-hover:text-accent-cyan transition-colors">Enter Email</span>
                 </label>
                 <input
                   type="email"
@@ -92,7 +92,7 @@ export default function ContactTerminal() {
 
               <div className="flex flex-col gap-2 group">
                 <label className="text-accent-cyan whitespace-nowrap">
-                  <span className="text-accent-pink">guest</span>@portfolio:~$ <span className="text-text-main group-hover:text-accent-cyan transition-colors">Enter Message</span>
+                  <span className="text-accent-pink">shibin</span>@portfolio:~$ <span className="text-text-main group-hover:text-accent-cyan transition-colors">Enter Message</span>
                 </label>
                 <textarea
                   name="message"

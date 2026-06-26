@@ -17,11 +17,13 @@ function App() {
       <ExperienceTimeline />
       <GithubVault />
       <ContactTerminal />
-      
+
       {/* Footer */}
       <footer className="py-8 text-center text-text-muted font-mono text-sm border-t border-bg-card-hover/50 bg-bg-base relative z-10">
-        <p>&copy; {new Date().getFullYear()} Shibin. All systems operational.</p>
-        <p className="mt-2 opacity-50 text-xs">Built with React, Vite & Tailwind v4</p>
+        <p>&copy; {new Date().getFullYear()} Shibin. All Rights Reserved.</p>
+        <p className="font-mono text-accent-cyan mt-5">
+          &gt; status: available_for_hire = true
+        </p>
       </footer>
     </Layout>
   );

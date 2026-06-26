@@ -8,25 +8,48 @@ export default function GithubVault() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Placeholder fetching logic for GitHub API
-    // The user will update keys/username later
-    const fetchGithubData = async () => {
-      try {
-        await new Promise(resolve => setTimeout(resolve, 1500));
+  const username = "Shibin-X";
 
-        setStats({ repos: 42, followers: 128, following: 14 });
-        setTopRepos([
-          { name: "e-commerce-backend", stars: 12, forks: 4, language: "Java" },
-          { name: "portfolio-v2", stars: 8, forks: 2, language: "JavaScript" }
-        ]);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching GitHub data:", error);
-        setLoading(false);
-      }
-    };
-    fetchGithubData();
-  }, []);
+  const fetchGithubData = async () => {
+    try {
+      setLoading(true);
+
+      // Fetch profile
+      const profileResponse = await fetch(
+        `https://api.github.com/users/${username}`
+      );
+
+      const profile = await profileResponse.json();
+
+      // Fetch repositories
+      const reposResponse = await fetch(
+        `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`
+      );
+
+      const repos = await reposResponse.json();
+
+      // Sort repositories by stars
+      const topRepositories = repos
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 4);
+
+      setStats({
+        repos: profile.public_repos,
+        followers: profile.followers,
+        following: profile.following,
+      });
+
+      setTopRepos(topRepositories);
+
+      setLoading(false);
+    } catch (error) {
+      console.error("GitHub API Error:", error);
+      setLoading(false);
+    }
+  };
+
+  fetchGithubData();
+}, []);
 
   return (
     <section id="resume" className="min-h-screen py-20 px-6 lg:px-16 flex flex-col justify-center border-t border-bg-card-hover/50">

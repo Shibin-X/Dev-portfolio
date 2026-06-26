@@ -66,7 +66,7 @@ export default function SkillsArsenal() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-accent-purple font-mono text-2xl mr-4">02.</span>
-            Skills <span className="text-gradient">Arsenal</span>
+            Technology <span className="text-gradient">Stack</span>
           </h2>
           <p className="text-text-muted font-mono bg-bg-card border border-bg-card-hover inline-block px-4 py-1 rounded-md">
             &gt; Loading technical capabilities...

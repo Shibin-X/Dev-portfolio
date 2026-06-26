@@ -82,7 +82,7 @@ export default function AboutDashboard() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="text-accent-cyan font-mono text-2xl mr-4">01.</span>
-            System <span className="text-gradient">Diagnostics</span>
+            Developer <span className="text-gradient">Console</span>
           </h2>
           <p className="text-text-muted font-mono bg-bg-card border border-bg-card-hover inline-block px-4 py-1 rounded-md">
             &gt; Candidate information loaded.

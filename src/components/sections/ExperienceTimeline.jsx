@@ -4,7 +4,7 @@ export default function ExperienceTimeline() {
   const experiences = [
   {
     year: "2026",
-    title: "Open to Software Engineering Opportunities",
+    title: "Open to Work",
     description:
       "Actively seeking entry-level Java Backend Developer, Java Full Stack Developer, Technical Support Engineer, and Software Support roles. Continuously improving Java, Spring Boot, React, SQL, Linux, and problem-solving skills while building production-ready applications.",
     icon: "🚀",
