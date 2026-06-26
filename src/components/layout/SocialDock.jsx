@@ -3,9 +3,9 @@ import { FiLink } from 'react-icons/fi';
 
 export default function SocialDock() {
   const links = [
-    { icon: FaLinkedin, url: '#', label: 'LinkedIn' },
-    { icon: FaGithub, url: '#', label: 'GitHub' },
-    { icon: FaEnvelope, url: '#', label: 'Email' },
+    { icon: FaLinkedin, url: 'https://www.linkedin.com/in/shibin-g', label: 'LinkedIn' },
+    { icon: FaGithub, url: 'https://github.com/Shibin-X', label: 'GitHub' },
+    { icon: FaEnvelope, url: '', label: 'Email' },
     { icon: FiLink, url: '#', label: 'Topmate' },
   ];
 

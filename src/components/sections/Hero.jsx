@@ -58,7 +58,7 @@ export default function Hero() {
       })}
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 flex-1 py-12">
-        
+
         {/* Left Side: Content */}
         <div className="flex flex-col items-start gap-6">
           <motion.div
@@ -69,7 +69,7 @@ export default function Hero() {
           >
             System Status: ONLINE
           </motion.div>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,13 +104,18 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mt-4"
           >
-            <button className="group relative px-8 py-4 bg-transparent overflow-hidden rounded-lg font-bold text-lg border border-accent-cyan text-accent-cyan transition-all hover:text-bg-base hover:shadow-[0_0_20px_#00F5FF]">
+            <a
+              href="/resume/Shibin_Resume.pdf"
+              download
+              className="group relative inline-flex px-8 py-4 bg-transparent overflow-hidden rounded-lg font-bold text-lg border border-accent-cyan text-accent-cyan transition-all hover:text-bg-base hover:shadow-[0_0_20px_#00F5FF]"
+            >
               <span className="absolute inset-0 bg-accent-cyan w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></span>
+
               <span className="relative z-10 flex items-center gap-2">
                 Download Resume
                 <FiDownload className="group-hover:-translate-y-1 transition-transform" />
               </span>
-            </button>
+            </a>
           </motion.div>
         </div>
 
@@ -123,22 +128,22 @@ export default function Hero() {
         >
           {/* Glowing orb background */}
           <div className="absolute inset-0 bg-gradient-to-tr from-accent-purple/20 to-accent-cyan/20 rounded-full blur-3xl mix-blend-screen" />
-          
+
           {/* Abstract geometric shapes or placeholder for illustration */}
           <div className="relative w-full h-full border border-bg-card-hover rounded-3xl bg-bg-card/40 backdrop-blur-xl flex items-center justify-center overflow-hidden shadow-2xl">
-             <motion.div 
-               animate={{ rotate: 360 }}
-               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-               className="w-48 h-48 border-2 border-dashed border-accent-cyan/50 rounded-full flex items-center justify-center"
-             >
-               <motion.div 
-                 animate={{ rotate: -360 }}
-                 transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                 className="w-32 h-32 border-2 border-accent-purple/50 rounded-lg flex items-center justify-center bg-bg-card"
-               >
-                 <span className="font-mono text-accent-pink text-xs tracking-widest">&lt;CODE/&gt;</span>
-               </motion.div>
-             </motion.div>
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+              className="w-48 h-48 border-2 border-dashed border-accent-cyan/50 rounded-full flex items-center justify-center"
+            >
+              <motion.div
+                animate={{ rotate: -360 }}
+                transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                className="w-32 h-32 border-2 border-accent-purple/50 rounded-lg flex items-center justify-center bg-bg-card"
+              >
+                <span className="font-mono text-accent-pink text-xs tracking-widest">&lt;CODE/&gt;</span>
+              </motion.div>
+            </motion.div>
           </div>
         </motion.div>
 
@@ -154,7 +159,7 @@ export default function Hero() {
         {[
           { label: "Class of", value: "2025" },
           { label: "Role", value: "Java Full Stack" },
-          { label: "Stack", value: "React + Spring" },
+          { label: "Stack", value: "React + SpringBoot" },
           { label: "Status", value: "Open To Work", highlight: true }
         ].map((stat, i) => (
           <div key={i} className={`flex flex-col items-center justify-center text-center p-2 border-r border-bg-card-hover last:border-0 ${stat.highlight ? 'text-accent-cyan' : ''}`}>

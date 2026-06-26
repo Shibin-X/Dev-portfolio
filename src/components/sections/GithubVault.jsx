@@ -13,7 +13,7 @@ export default function GithubVault() {
     const fetchGithubData = async () => {
       try {
         await new Promise(resolve => setTimeout(resolve, 1500));
-        
+
         setStats({ repos: 42, followers: 128, following: 14 });
         setTopRepos([
           { name: "e-commerce-backend", stars: 12, forks: 4, language: "Java" },
@@ -47,7 +47,7 @@ export default function GithubVault() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
+
           {/* GitHub Stats Grid */}
           <div className="lg:col-span-2 space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -56,7 +56,7 @@ export default function GithubVault() {
                 { label: "Followers", value: stats.followers },
                 { label: "Following", value: stats.following }
               ].map((stat, i) => (
-                <motion.div 
+                <motion.div
                   key={stat.label}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -105,22 +105,25 @@ export default function GithubVault() {
           >
             <div className="bg-bg-card border border-bg-card-hover rounded-2xl p-8 h-full flex flex-col items-center justify-center text-center relative overflow-hidden group hover:border-accent-cyan transition-colors hover:shadow-[0_0_40px_-10px_#00F5FF]">
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent-cyan/10 via-bg-card to-bg-card z-0" />
-              
+
               <div className="relative z-10 flex flex-col items-center w-full">
                 <div className="w-20 h-20 bg-bg-base border border-bg-card-hover rounded-full flex items-center justify-center mb-6 group-hover:border-accent-cyan group-hover:scale-110 transition-all duration-300">
                   <FiDownload className="text-3xl text-text-muted group-hover:text-accent-cyan transition-colors" />
                 </div>
-                
                 <h3 className="text-2xl font-bold text-text-main mb-2">Resume.pdf</h3>
-                <p className="text-sm font-mono text-text-muted mb-8">Last Updated: Oct 2025</p>
-
-                <button className="relative px-6 py-4 bg-transparent overflow-hidden rounded-lg font-bold border border-accent-cyan text-accent-cyan transition-all hover:text-bg-base group/btn w-full flex items-center justify-center gap-2 text-sm md:text-base">
+                <p className="text-sm font-mono text-text-muted mb-8">Last Updated: Today</p>
+                <a
+                  href="/resume/Shibin_Resume.pdf"
+                  download
+                  className="relative inline-flex px-6 py-4 bg-transparent overflow-hidden rounded-lg font-bold border border-accent-cyan text-accent-cyan transition-all hover:text-bg-base group/btn w-full items-center justify-center gap-2 text-sm md:text-base"
+                >
                   <span className="absolute inset-0 bg-accent-cyan w-0 group-hover/btn:w-full transition-all duration-300 ease-out z-0"></span>
+
                   <span className="relative z-10 flex items-center gap-2">
                     DECRYPT & DOWNLOAD
                     <FiDownload className="group-hover/btn:-translate-y-1 transition-transform" />
                   </span>
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>
